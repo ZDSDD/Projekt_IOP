@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using StudSentials.Models;
 
 namespace StudSentials.Data
 {
@@ -9,5 +10,6 @@ namespace StudSentials.Data
             : base(options)
         {
         }
+        public DbSet<StudSentials.Models.SubjectModel> SubjectModel { get; set; } = default!;
     }
 }
